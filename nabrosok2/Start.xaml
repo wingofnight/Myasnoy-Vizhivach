@@ -1,0 +1,16 @@
+﻿<Window x:Class="nabrosok2.Start"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nabrosok2"
+        mc:Ignorable="d"
+        Title="myasnoy vijivach2" Height="797" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="Starts" Height="768" Width="1024" PreviewMouseLeftButtonUp="Grid_PreviewMouseLeftButtonUp">
+        <Grid.Background>
+            <ImageBrush ImageSource="/start123.jpg"/>
+        </Grid.Background>
+        <TextBlock x:Name="txt_1" HorizontalAlignment="Left" Margin="34,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="43" Width="110"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <AutoGenerateBindingRedirects>True</AutoGenerateBindingRedirects>
+    <UseWindowsForms>False</UseWindowsForms>
+    <ApplicationIcon>колесо.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="4_koleso.png" />
+    <None Remove="akkum.png" />
+    <None Remove="apteka.png" />
+    <None Remove="bacground_camp3.jpg" />
+    <None Remove="backgrounb_camp.jpg" />
+    <None Remove="background_camp2.jpg" />
+    <None Remove="background_camp3.jpg" />
+    <None Remove="battonEngine.png" />
+    <None Remove="Car_background.jpg" />
+    <None Remove="car_bamper.png" />
+    <None Remove="holodilnik.png" />
+    <None Remove="kubik.png" />
+    <None Remove="lom_ruka.png" />
+    <None Remove="map.jpg" />
+    <None Remove="map2.jpg" />
+    <None Remove="map_back.jpg" />
+    <None Remove="map_back2.jpg" />
+    <None Remove="map_background.png" />
+    <None Remove="map__3.png" />
+    <None Remove="ognetush.png" />
+    <None Remove="podushka.png" />
+    <None Remove="rose.png" />
+    <None Remove="samogon.png" />
+    <None Remove="scotch_koleso.png" />
+    <None Remove="start123.jpg" />
+    <None Remove="strejch.png" />
+    <None Remove="test-sprite.png" />
+    <None Remove="the_end_2.png" />
+    <None Remove="tractor.jpg" />
+    <None Remove="наволочка.png" />
+    <None Remove="перья.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="колесо.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="4_koleso.png" />
+    <Resource Include="akkum.png" />
+    <Resource Include="apteka.png" />
+    <Resource Include="bacground_camp3.jpg" />
+    <Resource Include="backgrounb_camp.jpg" />
+    <Resource Include="background_camp2.jpg" />
+    <Resource Include="background_camp3.jpg" />
+    <Resource Include="battonEngine.png" />
+    <Resource Include="Car_background.jpg" />
+    <Resource Include="car_bamper.png" />
+    <Resource Include="holodilnik.png" />
+    <Resource Include="kubik.png" />
+    <Resource Include="lom_ruka.png" />
+    <Resource Include="map.jpg" />
+    <Resource Include="map2.jpg" />
+    <Resource Include="map_back.jpg" />
+    <Resource Include="map_back2.jpg" />
+    <Resource Include="map_background.png" />
+    <Resource Include="map__3.png" />
+    <Resource Include="ognetush.png" />
+    <Resource Include="podushka.png" />
+    <Resource Include="rose.png" />
+    <Resource Include="samogon.png" />
+    <Resource Include="scotch_koleso.png" />
+    <Resource Include="start123.jpg" />
+    <Resource Include="strejch.png" />
+    <Resource Include="test-sprite.png" />
+    <Resource Include="the_end_2.png" />
+    <Resource Include="tractor.jpg" />
+    <Resource Include="наволочка.png" />
+    <Resource Include="перья.png" />
+  </ItemGroup>
+
+</Project>

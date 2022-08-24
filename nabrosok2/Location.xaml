@@ -1,0 +1,43 @@
+﻿<Window x:Class="nabrosok2.Location"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nabrosok2"
+        mc:Ignorable="d"
+        Title="myasnoy vijivach2" Height="797" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="LocationBackground" Height="768" Width="1024" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/tractor.jpg"/>
+        </Grid.Background>
+        <Rectangle x:Name="rct_arrow" HorizontalAlignment="Left" Height="149" Margin="-12,518,0,0"  VerticalAlignment="Top" Width="177" MouseEnter="rct_arrow_MouseEnter" PreviewMouseLeftButtonDown="rct_arrow_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_arrow_PreviewMouseLeftButtonUp" MouseLeave="rct_arrow_MouseLeave" Panel.ZIndex="2"/>
+
+        <Rectangle x:Name="rct_inv0" Stroke="#99777777" Margin="58,634,831,29" MouseEnter="rct_inv0_MouseEnter" MouseLeave="rct_inv0_MouseLeave" PreviewMouseLeftButtonDown="rct_inv0_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv0_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+        <Rectangle x:Name="rct_inv1" Stroke="#99777777" Margin="213,634,676,29" MouseEnter="rct_inv1_MouseEnter" MouseLeave="rct_inv1_MouseLeave" PreviewMouseLeftButtonDown="rct_inv1_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv1_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+        <Rectangle x:Name="rct_inv2" Stroke="#99777777" Margin="368,634,521,29" MouseEnter="rct_inv2_MouseEnter" MouseLeave="rct_inv2_MouseLeave" PreviewMouseLeftButtonDown="rct_inv2_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv2_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+        <Rectangle x:Name="rct_inv3" Stroke="#99777777" Margin="526,634,363,29" MouseEnter="rct_inv3_MouseEnter" MouseLeave="rct_inv3_MouseLeave" PreviewMouseLeftButtonDown="rct_inv3_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv3_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+        <Rectangle x:Name="rct_inv4" Stroke="#99777777" Margin="684,634,205,29" MouseEnter="rct_inv4_MouseEnter" MouseLeave="rct_inv4_MouseLeave" PreviewMouseLeftButtonDown="rct_inv4_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv4_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+        <Rectangle x:Name="rct_inv5" Stroke="#99777777" Margin="843,634,46,29" MouseEnter="rct_inv5_MouseEnter" MouseLeave="rct_inv5_MouseLeave" PreviewMouseLeftButtonDown="rct_inv5_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_inv5_PreviewMouseLeftButtonUp" Panel.ZIndex="1"/>
+
+        <TextBlock x:Name="txtbl_info_left" HorizontalAlignment="Left" Margin="36,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="513" Width="513"  FontSize="24" FontWeight="Normal" OpacityMask="#FF100E0E" FontFamily="Arial Black" FontStyle="Normal" IsEnabled="False">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="#FFF9B41C" Opacity="1"/>
+            </TextBlock.Foreground><Run Language="ru-ru"/>
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="3" Direction="260"></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+
+        <TextBlock x:Name="txtbl_info_right" HorizontalAlignment="Left" Margin="475,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="536" Width="513" FontSize="24" FontWeight="Normal" OpacityMask="#FF100E0E" FontFamily="Arial Black" FontStyle="Normal" IsEnabled="False">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="#FFF9B41C" Opacity="1"/>
+            </TextBlock.Foreground><Run Language="ru-ru"/>
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="3" Direction="260"></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+
+
+
+    </Grid>
+</Window>

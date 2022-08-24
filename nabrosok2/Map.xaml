@@ -1,0 +1,91 @@
+﻿<Window x:Class="nabrosok2.Map"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nabrosok2"
+        mc:Ignorable="d"
+        Title="myasnoy vijivach2" Height="797" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+
+    <Grid x:Name="Maps" Height="768" Width="1024" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/map_back2.jpg"/>
+        </Grid.Background>
+
+
+        <Rectangle x:Name="Card_1"  RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="377" Margin="461,370,0,0"  VerticalAlignment="Top" Width="272" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="1" PreviewMouseLeftButtonUp="Card_1_PreviewMouseLeftButtonUp"   >
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.952"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle x:Name="Calode0" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="378" Margin="35,358,0,0"  VerticalAlignment="Top" Width="267"  Panel.ZIndex="1" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp"/>
+        <Rectangle x:Name="Calode1" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="379" Margin="41,365,0,0"  VerticalAlignment="Top" Width="267"  Panel.ZIndex="2" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp">
+            <Rectangle.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Direction="260"></DropShadowEffect>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="Calode2" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="379" Margin="54,347,0,0"  VerticalAlignment="Top" Width="268"  Panel.ZIndex="3" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp"/>
+        <Rectangle x:Name="Calode3" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="380" Margin="59,366,0,0"  VerticalAlignment="Top" Width="267"  Panel.ZIndex="4" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp"/>
+        <Rectangle x:Name="Calode4" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="380" Margin="68,390,0,0"  VerticalAlignment="Top" Width="267"  Panel.ZIndex="5" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp"/>
+        <Rectangle x:Name="Calode5" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="379" Margin="77,368,0,0"  VerticalAlignment="Top" Width="267"  Panel.ZIndex="6" MouseEnter="Calode_MouseEnter" PreviewMouseLeftButtonUp="Calode_PreviewMouseLeftButtonUp" Visibility="Visible"/>
+
+
+        <Rectangle x:Name="Card_2" RadiusX="30" RadiusY="30" HorizontalAlignment="Left" Height="376" Margin="711,355,0,0"  VerticalAlignment="Top" Width="270" RenderTransformOrigin="0.5,0.5" Panel.ZIndex="2"  PreviewMouseLeftButtonUp="Card_2_PreviewMouseLeftButtonUp">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="5.217"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+        <TextBlock x:Name="txtBl_map_yellow" HorizontalAlignment="Left" Margin="100,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="690" FontSize="36" FontWeight="Normal" OpacityMask="#FF100E0E" FontFamily="Arial Black" FontStyle="Normal" IsEnabled="False">
+            <TextBlock.Foreground>
+                <SolidColorBrush Color="#FFF9B41C" Opacity="1"/>
+            </TextBlock.Foreground><Run Language="ru-ru"/>
+            <TextBlock.Effect>
+                <DropShadowEffect Color="Black" BlurRadius="1" ShadowDepth="2" Direction="260"></DropShadowEffect>
+            </TextBlock.Effect>
+        </TextBlock>
+
+
+        <Rectangle x:Name="rct_arrow" HorizontalAlignment="Left" Height="164" Margin="853,91,0,0"  VerticalAlignment="Top" Width="168" MouseEnter="rct_arrow_MouseEnter" PreviewMouseLeftButtonDown="rct_arrow_PreviewMouseLeftButtonDown" PreviewMouseLeftButtonUp="rct_arrow_PreviewMouseLeftButtonUp" MouseLeave="rct_arrow_MouseLeave" Panel.ZIndex="5"/>
+        <Rectangle HorizontalAlignment="Left" Height="397" Margin="69,30,0,0"  VerticalAlignment="Top" Width="881">
+            <Rectangle.Fill>
+                <ImageBrush/>
+            </Rectangle.Fill>
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="20" Color="Black" ShadowDepth="10" Direction="280" RenderingBias="Performance"  />
+            </Rectangle.Effect>
+        </Rectangle>
+        <Rectangle x:Name="rct_caps0" HorizontalAlignment="Left" Height="90" Margin="104,46,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps1" HorizontalAlignment="Left" Height="90" Margin="180,30,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps13" HorizontalAlignment="Left" Height="90" Margin="318,105,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps5" HorizontalAlignment="Left" Height="90" Margin="440,46,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps12" HorizontalAlignment="Left" Height="90" Margin="549,55,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps11" HorizontalAlignment="Left" Height="90" Margin="666,91,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps18" HorizontalAlignment="Left" Height="90" Margin="877,30,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps17" HorizontalAlignment="Left" Height="90" Margin="832,78,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps16" HorizontalAlignment="Left" Height="90" Margin="752,195,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps14" HorizontalAlignment="Left" Height="90" Margin="594,186,0,0" VerticalAlignment="Top" Width="90"  RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps10_center" HorizontalAlignment="Left" Height="150" Margin="430,150,0,0"  VerticalAlignment="Top" Width="150"  RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps4" HorizontalAlignment="Left" Height="90" Margin="216,135,0,0" VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps6" HorizontalAlignment="Left" Height="90" Margin="206,225,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps2" HorizontalAlignment="Left" Height="90" Margin="69,150,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps3" HorizontalAlignment="Left" Height="90" Margin="94,225,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps7" HorizontalAlignment="Left" Height="90" Margin="238,284,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps8" HorizontalAlignment="Left" Height="90" Margin="363,320,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps9" HorizontalAlignment="Left" Height="90" Margin="494,300,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps15" HorizontalAlignment="Left" Height="90" Margin="666,284,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+        <Rectangle x:Name="rct_caps19" HorizontalAlignment="Left" Height="90" Margin="860,275,0,0"  VerticalAlignment="Top" Width="90" RadiusX="40" RadiusY="40"/>
+
+    </Grid>
+</Window>

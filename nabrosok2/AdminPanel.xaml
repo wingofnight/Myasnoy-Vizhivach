@@ -1,0 +1,95 @@
+﻿<Window x:Class="nabrosok2.AdminPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nabrosok2"
+        mc:Ignorable="d"
+        Title="AdminPanel" Height="797" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" KeyUp="Window_KeyUp">
+    <Grid Margin="3,4,-3,-5">
+        <TextBlock HorizontalAlignment="Left" Margin="268,22,0,0" TextWrapping="Wrap" Text="Панель разработчика" VerticalAlignment="Top" Height="70" Width="518" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="82,137,0,0" TextWrapping="Wrap" Text="Выберите уровень" VerticalAlignment="Top" Height="50" Width="367" FontSize="24"/>
+        <TextBlock HorizontalAlignment="Left" Margin="78,239,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="366" FontSize="24"><Run Language="ru-ru" Text="Выберите предмет"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="80,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="366" FontSize="24"><Run Language="ru-ru" Text="Выберите какой ход"/></TextBlock>
+        <ComboBox x:Name="bxLvl" Text="Уровни" HorizontalAlignment="Left" Margin="447,136,0,0" VerticalAlignment="Top" Width="354" Height="50" SelectedIndex="2" FontSize="24" SelectionChanged="ComboBox_Selected">
+
+            <TextBlock>Сарай</TextBlock>
+            <TextBlock>Велик</TextBlock>
+
+            <TextBlock>Мост</TextBlock>
+
+            <TextBlock>Бункер</TextBlock>
+
+            <TextBlock>Лагерь лесников</TextBlock>
+
+            <TextBlock>Пещера</TextBlock>
+
+            <TextBlock>Перекресток</TextBlock>
+            <TextBlock>Паращютист</TextBlock>
+            <TextBlock>Разрушенный лагерь</TextBlock>
+            <TextBlock>Врата</TextBlock>
+            <TextBlock>Охотнечий домик</TextBlock>
+            <TextBlock>Заброшенный лагерь</TextBlock>
+            <TextBlock>Заросшая дорога</TextBlock>
+            <TextBlock>Лодка</TextBlock>
+            <TextBlock>Болото</TextBlock>
+            <TextBlock>Ручей</TextBlock>
+            <TextBlock>Вышка</TextBlock>
+            <TextBlock>Трактор</TextBlock>
+            <TextBlock>Дерево</TextBlock>
+
+        </ComboBox>
+        <ComboBox x:Name="bxItem"  HorizontalAlignment="Left" Margin="452,226,0,0" VerticalAlignment="Top" Width="354" Height="50" SelectedIndex="1" FontSize="24" SelectionChanged="bxItem_SelectionChanged">
+            <TextBlock>Акум от сотового</TextBlock>
+            <TextBlock>Аптечка</TextBlock>
+            <TextBlock>Велосипедная цепь</TextBlock>
+            <TextBlock>Веревка</TextBlock>
+            <TextBlock>Карта</TextBlock>
+            <TextBlock>Компас</TextBlock>
+            <TextBlock>Наволочка</TextBlock>
+            <TextBlock>Полиэтиленовый пакет</TextBlock>
+            <TextBlock>Скотч</TextBlock>
+            <TextBlock>Скрепка</TextBlock>
+            <TextBlock>Спички</TextBlock>
+            <TextBlock>Фонарик</TextBlock>
+            <TextBlock>Аккумулятор</TextBlock>
+            <TextBlock>Армейский нож</TextBlock>
+            <TextBlock>Бензин</TextBlock>
+            <TextBlock>Брелок с розой</TextBlock>
+            <TextBlock>Изолента</TextBlock>
+            <TextBlock>Кирпич</TextBlock>
+            <TextBlock>Колесо</TextBlock>
+            <TextBlock>Кубики</TextBlock>
+            <TextBlock>Лом</TextBlock>
+            <TextBlock>Металлический ящик</TextBlock>
+            <TextBlock>Огнетушитель</TextBlock>
+            <TextBlock>Перекладина</TextBlock>
+            <TextBlock>Перья</TextBlock>
+            <TextBlock>Рваная палатка</TextBlock>
+            <TextBlock>Руль</TextBlock>
+            <TextBlock>Самогон</TextBlock>
+            <TextBlock>Сигнальный пистолет</TextBlock>
+            <TextBlock>Стрейч</TextBlock>
+            <TextBlock>топор</TextBlock>
+            <TextBlock>Тушенка</TextBlock>
+            <TextBlock>Холодильник</TextBlock>
+            <TextBlock>Шестеренка</TextBlock>
+        </ComboBox>
+        <ComboBox x:Name="bxStep"  HorizontalAlignment="Left" Margin="450,322,0,0" VerticalAlignment="Top" Width="354" Height="50" SelectedIndex="0" FontSize="24" SelectionChanged="bxStep_SelectionChanged">
+            <TextBlock>1</TextBlock>
+            <TextBlock>2</TextBlock>
+            <TextBlock>3</TextBlock>
+        </ComboBox>
+        <Button x:Name="btn_GO" Content="Перейти" HorizontalAlignment="Left" Margin="323,430,0,0" VerticalAlignment="Top" FontSize="36" Height="106" Width="322" Click="btn_GO_Click"/>
+        <Button x:Name="btn_apdate_camp" Content="Обновить&#xD;&#xA;Лагерь" HorizontalAlignment="Left" Margin="34,576,0,0" VerticalAlignment="Top" FontSize="24" Height="76" Width="246"/>
+        <Button x:Name="btn_car" Content="К машине" HorizontalAlignment="Left" Margin="374,578,0,0" VerticalAlignment="Top" FontSize="24" Height="76" Width="246" Click="btn_car_Click"/>
+        <Button x:Name="btn_map" Content="На карту" HorizontalAlignment="Left" Margin="712,578,0,0" VerticalAlignment="Top" FontSize="24" Height="76" Width="246"/>
+        <TextBox x:Name="txtBx_day" HorizontalAlignment="Left" Height="42" Margin="261,687,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="24"/>
+        <TextBox x:Name="txt_test" HorizontalAlignment="Left" Height="44" Margin="38,684,0,0" TextWrapping="Wrap" Text="Добавить дней" VerticalAlignment="Top" Width="184" IsEnabled="False" FontSize="24"/>
+        <Button x:Name="btn_plus_day" Content="OK" HorizontalAlignment="Left" Margin="456,686,0,0" VerticalAlignment="Top" Height="42" Width="132" FontSize="24"/>
+        <Button x:Name="btn_add" Content="► Add" HorizontalAlignment="Left" Margin="856,228,0,0" VerticalAlignment="Top" Height="45" Width="100" FontSize="24" Click="btn_add_Click"/>
+        <Button x:Name="btn_fin" Content="Конец" HorizontalAlignment="Left" Margin="715,675,0,0" VerticalAlignment="Top" FontSize="24" Height="62" Width="244" Click="btn_fin_Click"/>
+        <Button Content="90 Прогресс" HorizontalAlignment="Left" Margin="751,490,0,0" VerticalAlignment="Top" Height="59" Width="170" FontSize="24" Click="Button_Click"/>
+
+    </Grid>
+</Window>
